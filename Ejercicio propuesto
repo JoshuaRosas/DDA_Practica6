@@ -1,0 +1,60 @@
+CREATE TABLE dbo.Products  
+   (ProductID int PRIMARY KEY NOT NULL,  
+   ProductName varchar(25) NOT NULL,  
+   Price money NULL,  
+   ProductDescription varchar(max) NULL)  
+GO 
+INSERT dbo.Products (ProductName, ProductID, Price, ProductDescription)  
+    VALUES ('Screwdriver', 50, 3.17, 'Flat head')  
+GO
+INSERT dbo.Products (ProductName, ProductID, Price, ProductDescription)  
+    VALUES ('Tire Bar', 80, 12.90, 'Tool for changing tires.')  
+GO
+INSERT Products (ProductID, ProductName, Price)  
+    VALUES (3000, '3 mm Bracket', 0.52)  
+GO 
+INSERT dbo.Products (ProductName, ProductID, Price, ProductDescription)  
+    VALUES ('Screwdriver', 70, 8.17, 'Torx')  
+GO
+INSERT dbo.Products (ProductName, ProductID, Price, ProductDescription)  
+    VALUES ('Hammer', 60, 9.17, 'Flat head')  
+GO
+INSERT dbo.Products (ProductName, ProductID, Price, ProductDescription)  
+    VALUES ('Metric Tape', 30, 3.50, 'Small circle')  
+GO
+INSERT dbo.Products (ProductName, ProductID, Price, ProductDescription)  
+    VALUES ('Wrench', 55, 3.17, 'Big Head')  
+GO
+INSERT dbo.Products (ProductName, ProductID, Price, ProductDescription)  
+    VALUES ('Saw', 90, 8.17, 'Sharp teeth')  
+GO
+INSERT dbo.Products (ProductName, ProductID, Price, ProductDescription)  
+    VALUES ('Saw', 20, 8.17, 'Flat teeth')  
+GO
+INSERT dbo.Products (ProductName, ProductID, Price, ProductDescription)  
+    VALUES ('Micrometer', 10,11.50, 'Tool for changing tires.')  
+GO
+SELECT ProductName, Price  
+    FROM dbo.Products  
+GO 
+ 
+create table profesores(
+  documento varchar(8) not null,
+  nombre varchar (30),
+  domicilio varchar(30),
+  primary key(documento)
+ );
+ create table alumnos(
+  documento varchar(8) not null,
+  nombre varchar (30),
+  domicilio varchar(30),
+  primary key(documento)
+ );
+ 
+ insert into alumnos values('30000000','Juan Perez','Colon 123');
+ insert into alumnos values('30111111','Marta Morales','Caseros 222');
+ insert into alumnos values('30222222','Laura Torres','San Martin 987');
+ insert into alumnos values('30333333','Mariano Juarez','Avellaneda 34');
+ insert into alumnos values('23333333','Federico Lopez','Colon 987');
+ insert into profesores values('22222222','Susana Molina','Sucre 345');
+ insert into profesores values('23333333','Federico Lopez','Colon 987');
